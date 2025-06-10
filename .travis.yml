@@ -1,4 +1,5 @@
 #adding comment to modify file
+dist: focal
 sudo: required
 language: generic
 
