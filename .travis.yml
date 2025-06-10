@@ -12,12 +12,12 @@ script:
   - docker run -e CI=true lbert09/docker-react npm run test
 
 deploy:
-  - provider: elasticbeanstalk
-  - region: "us-east-2"
-  - app: "frontend"
-  - env: "Frontend-env"
-  - bucket_name: "elasticbeanstalk-us-east-2-607617496492"
-  - bucket_path: "frontend"
+  provider: elasticbeanstalk
+   region: "us-east-2"
+  app: "frontend"
+  env: "Frontend-env"
+  bucket_name: "elasticbeanstalk-us-east-2-607617496492"
+  bucket_path: "frontend"
   on: 
     branch: main
   access_key_id: $AWS_ACCESS_KEY
